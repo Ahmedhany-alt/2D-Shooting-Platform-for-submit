@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://owsqejlrl3tm"]
+
+[ext_resource type="Texture2D" uid="uid://raviinuq136v" path="res://backgrounds/background.png" id="1_fdrpr"]
+[ext_resource type="Texture2D" uid="uid://cxh6uhbetgyak" path="res://backgrounds/middleground-no-fungus.png" id="2_lh40e"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=1951314216]
+offset = Vector2(0, 236)
+transform = Transform2D(1, 0, 0, 1, 0, 236)
+
+[node name="BackgroundParallaxLayer" type="ParallaxLayer" parent="." unique_id=1905947992]
+position = Vector2(3, -2)
+motion_mirroring = Vector2(360, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundParallaxLayer" unique_id=6567874]
+position = Vector2(1530, -913)
+scale = Vector2(4.8666673, 4.2500005)
+texture = ExtResource("1_fdrpr")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundParallaxLayer" unique_id=86191203]
+position = Vector2(10.000001, -910)
+scale = Vector2(4.8291664, 4.2443185)
+texture = ExtResource("1_fdrpr")
+centered = false
+
+[node name="MidGroundParallaxLayer" type="ParallaxLayer" parent="." unique_id=1982648567]
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(816, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="MidGroundParallaxLayer" unique_id=142619879]
+position = Vector2(-1, -924.99994)
+scale = Vector2(3.0257351, 4.3806815)
+texture = ExtResource("2_lh40e")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="MidGroundParallaxLayer" unique_id=381061346]
+position = Vector2(1638.0001, -926)
+scale = Vector2(3.0367649, 4.3920455)
+texture = ExtResource("2_lh40e")
+centered = false
